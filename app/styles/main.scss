@@ -9,6 +9,7 @@ $border-focus:  #9FB1C1;
 $blue:          #077ABC;
 $aqua:          #07B3A1;
 $asphalt:       #506982;
+$red: #f00;
 
 
 body{
@@ -153,10 +154,11 @@ h2.heading{
     border: none;
     margin: 10px 0;
     opacity: 1;
-    transition: opacity .5s ease-in-out;
+    border:1px solid #fff;
+    transition: background .5s ease-in-out;
     text-transform: uppercase;
     &:hover{
-        opacity:0.8;
+        background:$red;
     }
 }
 .abstract_band{
@@ -220,25 +222,30 @@ h2.heading{
     height: 0%;
     .close_modal{
         position: absolute;
-        top: 140px;
-        right: 12%;
+        top: 0px;
+        right: -60px;
+        width:100px;
         cursor: pointer;
         z-index: 1000;
         color: #fff;
         display:none;
     }
     .container_entry_modal{
-        width:400px;
+        width:500px;
         margin: 70px auto;
-        background:rgba(255, 255, 255, 0.8);
         padding:0px;
         position: relative;
         overflow: hidden;
         top:-310px;
+        .container_modal{
+            position:relative;
+            width:90%;
+            background:rgba(155, 155, 155, 0.8);
+        }
         .nav_entry_modal{
             position: relative;
             top:0px;
-            height:50px;
+            height:  48px;
             .button_entry_modal{
                 float: left;
                 width: 50%;
@@ -247,7 +254,7 @@ h2.heading{
                 //border-left-top-radius:50%;
                 border:1px solid #fff;
                 border-bottom: none;
-
+                position:relative;
                 a{
                     width: 100%;
                     display:block;
@@ -256,38 +263,42 @@ h2.heading{
                     font-size: 24px;
                     text-transform: uppercase;
                     text-decoration: none;
+                    border-bottom:1px solid #fff;
                 }
             }
             .active{
-                background:rgba(155, 155, 155, 0.8);
+                background:rgba(255, 255, 255, 0.8);
+                border-bottom:none !important;
             }
         }
+
         .content_entry_modal{
             position: relative;
-            background: rgba(255, 255, 255, 0.18);
+            background:rgba(255, 255, 255, 0.82);
             width: 100%;
             padding: 20px;
             height: auto;
             border:1px solid #fff;
+            border-top:none;
             .show{
                 display:block;
             }
-            #artist_sign{
-                a{
-                    display:block;
-                }
-            }
-            #fans_sign{
-                a{
-                    display:block;
-                }
-            }
+            
             .signin_form{
                 display: none;
+                a{
+                    display:block;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color:#5e5e5e;
+                     &:hover{
+                        color:#000;
+                     }
+                }
+
             }
             .form-group{
-                a{
-                }
+
                 .controls{
                     clear: both;
                     text-align: left;
@@ -301,7 +312,7 @@ h2.heading{
                         font-size: 14px;
                         border: 1px solid $border;
                         width: 100%;
-                        margin-bottom: 18px;
+                        margin-bottom: 30px;
                         color: #888;
                         background-color: #fff;
                         font-family: 'Lato', 'sans-serif';
@@ -314,8 +325,8 @@ h2.heading{
                             outline: none;
                             border-color: $border-focus;
                             + label{
-                                color: $blue;
-                          cursor: text;
+                                color: #000;
+                                cursor: text;
                             }
                         }
                     }
@@ -332,20 +343,21 @@ h2.heading{
                     label{
                         position: absolute;
                         left: 8px;
-                        top: 12px;
+                        top: 5px;
                         color: #999;
                         font-size: 16px;
                         display: inline-block;
-                        padding: 4px 10px;
+                        padding: 4px 38px;
                         font-weight: 400;
                         background-color: rgba(255,255,255,0);
                         @include transition(color .3s, top .3s, background-color .8s);
                         &.active{
                            top: -25px;
-                            color: #f00;
+                            color: $red;
                             background-color: rgba(255, 255, 255, 0.8);
                         }
                     }
+
                     textarea{
                         resize: none;
                         height: 200px;
@@ -374,3 +386,20 @@ h2.heading{
     }
 
 }
+.icon{
+    background: url(../images/sprite01.png);
+    width: 33px;
+    height: 33px;
+    display: block;
+    position: absolute;
+    left: 0px;
+}
+.band_icon{
+    background-position: -14px 0px;
+}
+.fan_icon{
+    background-position: -44px 0px
+}
+#button_artist{
+            border-left:none;
+        }

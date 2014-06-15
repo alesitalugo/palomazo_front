@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="styles/pure-min.css">
         <link rel="stylesheet" href="styles/main.css">        
         <link rel="stylesheet" href="styles/grids-responsive-min.css">
-        <link rel="stylesheet" href="styles/font-awesome.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="styles/vendor/marketing-old-ie.css">
         <link rel="stylesheet" href="font/stylesheet.css">
 
@@ -89,68 +89,83 @@
                 </div>
             </div>
            <div id="entry_modal">
-                <div class="close_modal">close</div>                           
-                <div class="container_entry_modal">
-                    <div class="nav_entry_modal">
-                        <div class="button_entry_modal">
-                            <a href="#" id="button_artist" class="button_form" data-modal="artist">artistas</a>
+                <div class="container_entry_modal">    
+                    <div class="close_modal">
+                        <i class="fa fa-times"></i> 
+                    </div>   
+                    <div class="container_modal">
+                        <div class="nav_entry_modal">
+                            <div class="button_entry_modal">
+                                <a href="#" id="button_artist" class="button_form" data-modal="artist">
+                                    <i class="band_icon icon"></i>
+                                    artistas
+                                </a>
+                            </div>
+                            <div class="button_entry_modal">
+                                <a href="#" class="button_form" id="button_fans" data-modal="fans">
+                                    <i class="fan_icon icon"></i>
+                                    fans
+                                </a>
+                            </div>
                         </div>
-                        <div class="button_entry_modal">
-                            <a href="#" class="button_form" id="button_fans" data-modal="fans">fans</a>
-                        </div>
-                    </div>
-                    <div class="content_entry_modal">
-                        <div id="artist_sign" class="signin_form">
-                            <form action="" method="" accept-charset="" id="artist_form">
-                                <div class="form-group">
-                                    <div class="controls">
-                                        <div class="tooltip">
+                        <div class="content_entry_modal">
+                            <div id="artist_sign" class="signin_form">
+                                <form action="" method="" accept-charset="" id="artist_form">
+                                    <div class="form-group">
+                                        <div class="controls">
+                                            <div class="tooltip">
+                                            </div>
+                                            <input type="text" name="name" id="name_artist" value="" class="floatLabel">
+                                            <label for="name_artist">
+                                                <!--<i class="band_icon icon"></i>-->
+                                                banda / correo electrónico
+                                            </label>
                                         </div>
-                                        <input type="text" name="name" id="name" value="" class="floatLabel">
-                                        <label for="name">banda / correo electrónico</label>
-                                    </div>
-                                    <div class="controls">
-                                        <div class="tooltip">
+                                        <div class="controls">
+                                            <div class="tooltip">
+                                            </div>
+                                            <input type="text" name="password" value="" class="floatLabel">
+                                            <label for="password">contraseña</label>
                                         </div>
-                                        <input type="text" name="password" value="" class="floatLabel">
-                                        <label for="password">contraseña</label>
-                                    </div>
 
-                                </div>
-                                <button type="button" id="button_artist_login" class="button_login">Ingresar</button>                                                                                                       
-                            </form>
-                            <a href="#">olvidé la contraseña</a>
-                            <a href="#">Registrarme</a>
-                        </div>
-                        <div id="fans_sign" class="signin_form">
-                            <form action="" method="" accept-charset="" id="artist_form">
-                                <div class="form-group">
-                                   
-                                    <div class="controls">
+                                    </div>
+                                    <button type="button" id="button_artist_login" class="button_login">Ingresar</button>                                                                                                       
+                                </form>
+                                <a href="#">olvidé la contraseña</a>
+                                <a href="#">Registrarme</a>
+                            </div>
+                            <div id="fans_sign" class="signin_form">
+                                <form action="" method="" accept-charset="" id="artist_form">
+                                    <div class="form-group">
+                                    
+                                        <div class="controls">
                                         <div class="tooltip">
                                         </div>
                                         
-                                        <input type="text" name="name" id="name" value="" class="floatLabel">
-                                        <label for="name">usuario / correo electrónico</label>
-                                    </div>
-                                       <div class="controls">
-                                        <div class="tooltip">
+                                        <input type="text" name="name" id="name_fan" value="" class="floatLabel">
+                                        <label for="name_fan">
+                                            <!--<i class="fan_icon icon"></i>-->
+                                            usuario / correo electrónico
+                                        </label>
                                         </div>
-                                        <input type="text" name="name" id="name" value="" class="floatLabel">
-                                        <label for="name">contraseña</label>
+                                           <div class="controls">
+                                            <div class="tooltip">
+                                            </div>
+                                            <input type="text" name="name" id="name" value="" class="floatLabel">
+                                            <label for="name">contraseña</label>
+                                        </div>
+                                        <button type="button" id="button_artist_login" class="button_login">Ingresar</button> 
                                     </div>
-                                    <button type="button" id="button_artist_login" class="button_login">Ingresar</button> 
-                                </div>
                                                           
-                            </form>
-                            <a href="#">olvidé la contraseña</a>
-                            <a href="#">Registrarme</a>
+                                </form>
+                                <a href="#">olvidé la contraseña</a>
+                                <a href="#">Registrarme</a>
+                            </div>
                         </div>
-                    </div>
-                </div>                
+                    </div>                
+                </div>
             </div>
         </div>
-        
         
         <!-- bower:js -->
         <script src="../bower_components/jquery/jquery.js"></script>
