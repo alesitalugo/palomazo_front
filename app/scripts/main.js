@@ -23,8 +23,6 @@ app_router.on('route:ver_concierto', function(){
 });	
 
 
-
-
 'use strict';
 (function($){
 	function floatLabel(inputType){
