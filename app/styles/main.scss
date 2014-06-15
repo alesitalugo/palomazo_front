@@ -14,6 +14,7 @@ $red: #800;
 
 body{
     font-family: 'MenschRegular';
+    background:#ebebeb;
 }
 .home-menu.pure-menu-open {
     background: #000 !important;
@@ -312,6 +313,7 @@ h2.heading{
                     clear: both;
                     text-align: left;
                     position: relative;
+                    top:10px;
                     input[type="text"],
                     input[type="email"],
                     input[type="tel"],
@@ -390,6 +392,121 @@ h2.heading{
                     }
                 }
             }
+#registro_concierto{
+    margin:90px auto 0px;
+}
+.artist_profile{
+    width: 430px;
+    position:relative;
+    height:346px;    
+    .artist_image{
+        width:180px;
+        height:345px;
+        float:left;
+        img{
+            width:100%;
+            height:100%;
+                
+        }    
+    }
+    
+}
+#info_artist{
+    background:#fff;
+}
+.artist_description{
+    float:right;
+    margin: 20px 0;
+    .edit_info{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        color: #ccc;
+    }
+    h3{
+        font-size: 24px;
+        color:#000;
+        font-family: 'MenschBold';        
+        margin: 5px  0;
+    }
+    p{
+        color:#000;
+        font-size: 14px;
+    }
+    .contact_info{
+        position: absolute;
+        bottom: 10px;
+        width:50%;
+        a{
+            display:block;
+            color:#999;
+            text-decoration: none;
+            &:hover{
+                color:#000;
+            }
+        }
+    }
+}
+.datos_concierto{
+    width:80%;
+    float:right;
+    h3{
+        font-family: 'MenschBold';
+        color:#000;
+        margin: 0px 0px 5px;        
+    }
+    input{
+        width: 75%;
+        display: block;
+        height: 30px;
+        border: 1px solid #ccc;
+    }
+    .challenge{
+        p{
+            margin:0px;
+        }
+    }
+   
+}
+.pure-menu-heading {
+    position: relative;
+    left: 170px;
+}
+.especificaciones_concierto {
+    .item_concert{
+        input, textarea{
+            width: 100%;
+            display: block;
+            height: 30px;
+            border: 1px solid #ccc;
+            margin:10px;
+        }
+        textarea{
+            height:150px;
+        }
+    }
+    .button_login{
+        float:right;
+    }
+}
+.fa-calendar{
+    position: absolute;
+    top: 7px;
+    left: 5px;
+}
+.item_concert{
+    width:80%;
+    float:right;
+    input{
+        width: 75%;
+        display: block;
+        height: 30px;
+        border: 1px solid #ccc;
+    }
+    label i{
+        position: absolute;
+    }
+}
 .icon{
     background: url(../images/sprite01.png);
     width: 33px;

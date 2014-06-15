@@ -1,0 +1,155 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>bandaid</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/pure-min.css">
+        <link rel="stylesheet" href="styles/main.css">        
+        <link rel="stylesheet" href="styles/grids-responsive-min.css">
+        <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/vendor/marketing-old-ie.css">
+        <link rel="stylesheet" href="styles/vendor/marketing.css">
+        <link rel="stylesheet" href="font/stylesheet.css">
+
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="../bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+
+    </head>
+    <body onload="initialize()">
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!--<div class="form-group">
+            <h2 class="heading"></h2>
+            <div class="controls">
+                <input type="text" id="name" class="floatLabel" name="name">
+                <label for="name">Nombre</label>
+            </div>
+
+        </div>-->
+        <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+            <a href="#" class="pure-menu-heading">
+                <img src="images/logo01.png" alt="" width="40%">                
+            </a>
+            <ul>
+                <li class=""><a class="show_modal" data-modal="artist">artistas</a></li>
+                <li class=""><a class="show_modal" data-modal="fans" >fans</a></li>
+            </ul>
+            
+        </div>
+     
+        
+        <section id="registro_concierto" class="section_intern">
+            <div id="concert_form" class="form-group">  
+                <div class="pure-g">
+                    <div class="pure-u-1-2" id="info_artist">
+                        <div class="artist_profile">
+                            <div class="artist_image">
+                                <img src="images/band01.png">
+                            </div>
+                            <div class="artist_description">
+                                <a href="#" class="edit_info">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                </a>
+                                <h3>Nombre del Artista</h3>
+                                <p>Descripción del artista</p>
+                                <div class="contact_info">
+                                    <a href="#"  target="_blank">www.band.com</a>
+                                    <a href="#" >info@artista.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pure-u-1-2" id="info_concierto">
+                        <div class="datos_concierto">
+                            <h3>Introducir datos del concierto</h3>
+                            <div class="controls">
+                                <input type="text" name="concierto_name" value="" class="floatLabel">
+                                <label for="concierto_name">Nombre del evento</label>
+                            </div>
+                            <button type="button" class="button_login">
+                               <i class="fa fa-cloud-download"></i>
+                                subir poster
+                            </button>
+                            <div class="challenge">
+                                <p>META</p>
+                                <div class="controls">
+                                    <input class="floatLabel" type="text" name="meta" value="">                                    
+                                    <label for="meta">ejem. $50,000.00</label>
+                                </div>
+                            </div>
+                            <div class="ticket_price">
+                                <p><i class="fa fa-ticket"></i>
+Precio por Boleto:  <span>$00.00</span></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="pure-g">
+                    <div class="pure-u-1-2">
+                        <div id="map_canvas" style="width:100%; height:100%"></div>
+                    </div>
+                    <div class="pure-u-1-2">
+                        <div class="especificaciones_concierto">
+                            <div class="item_concert controls">
+                                    <input type="text" name="date" value="" class="floatLabel" >
+                                    <label for="date">                                    
+Fecha del evento
+                                    </label>
+                            </div>
+                            <div class="item_concert controls">
+                                <input type="text" name="ubicacion_evento" value="" placeholder="" class="floatLabel" id="query">
+                                <label for="ubicacion_evento">                                    <i class="fa "></i>Ubicación del evento</label>
+                            </div>
+                            <div class="item_concert">
+                                <textarea name="descripcion_evento" message="descripción del evento"></textarea>
+
+                            </div>
+                            <button type="button" class="button_login">
+                                <i class="fa fa-cloud-download"></i>
+                                guardar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?libraries=places&sensor=true"></script>
+
+        <script src="scripts/vendor/util.js"></script>
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <script src="scripts/vendor/maps.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

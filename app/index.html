@@ -16,7 +16,8 @@
         <link rel="stylesheet" href="styles/pure-min.css">
         <link rel="stylesheet" href="styles/main.css">        
         <link rel="stylesheet" href="styles/grids-responsive-min.css">
-    <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+        <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="styles/vendor/marketing-old-ie.css">
         <link rel="stylesheet" href="styles/vendor/marketing.css">
         <link rel="stylesheet" href="font/stylesheet.css">
@@ -27,7 +28,7 @@
         <!-- endbuild -->
 
     </head>
-    <body>
+    <body onload="initialize()">
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -40,14 +41,16 @@
 
         </div>-->
         <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
-            <a href="#" class="pure-menu-heading"></a>
+
+            <a href="#" class="pure-menu-heading">
+            </a>
             <ul>
                 <li class=""><a class="show_modal" data-modal="artist">artistas</a></li>
                 <li class=""><a class="show_modal" data-modal="fans" >fans</a></li>
             </ul>
             
         </div>
-        <!--<section id="home">
+       <section id="home">
             <div class="splash-container">
                 <div class="splash">
                     <h1 class="splash-head">
@@ -169,74 +172,9 @@
                     </div>
                 </div>
             </div>
-        </section>-->
-        
-        <section id="registro_concierto" class="section_intern">
-            <div id="concert_form">  
-                <div class="pure-g">
-                    <div class="pure-u-1-2" id="info_artist">
-                        <div class="artist_profile">
-                            <div class="artist_image">
-                                <img src="">
-                            </div>
-                            <div class="artist_description">
-                                <i class="fa fa-pencil-square-o"></i>
-                                <h3>Nombre del Artista</h3>
-                                <p>Descripción del artista</p>
-                                <div class="contact_info">
-                                    <a href="#" target="_blank">www.band.com</a>
-                                    <a href="#">info@artista.com</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pure-u-1-2" id="info_concierto">
-                        <div class="datos_concierto">
-                            <h3>Introducir datos del concierto</h3>
-                            <input type="text" name="" value="" class="floatLabel">
-                            <button type="button" class="button_login">
-                               <i class="fa fa-cloud-download"></i>
-                                subir poster
-                            </button>
-                            <div class="challenge">
-                                <p>META</p>
-                                <input type="text" name="" value="$50,000.00">
-                            </div>
-                            <div class="ticket_price">
-                                <i class="fa fa-ticket"></i>
-                                <p>Precio por Boleto</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="pure-g">
-                    <div class="pure-u-1-2">
-                        <p>double</p>
-                    </div>
-                    <div class="pure-u-1-2">
-                        <div class="item_concert">
-                            <div class="controls">
-                                <input type="text" name="date" value="" >
-                                <label for=""></label>
-                            </div>
-                            <i class="fa fa-calendar"></i>
-                        </div>
-                        <div class="item_concert">
-                            <input type="text" name="" value="" placeholder="Location" class="floatLabel">
-                            <i class=""></i>
-                        </div>
-                        <div class="item_concert">
-                            <textarea name=""></textarea>
-                        </div>
-                        <button type="button" class="button_login">
-                            <i class="fa fa-cloud-download"></i>
-                            guardar
-                        </button>
-                    </div>
-                </div>
-            </div>
         </section>
+        
+        
 
         <!-- bower:js -->
         <script src="../bower_components/jquery/jquery.js"></script>
@@ -244,6 +182,7 @@
         <!-- endbuild -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -252,9 +191,12 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
-        <script src="scripts/util.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?libraries=places&sensor=true"></script>
+
+        <script src="scripts/vendor/util.js"></script>
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <script src="scripts/vendor/maps.js"></script>
         <!-- endbuild -->
 </body>
 </html>
