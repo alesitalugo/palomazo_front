@@ -447,6 +447,51 @@ h2.heading{
         }
     }
 }
+.especificaciones_concierto {
+    .item_concert{
+        width:100%;
+        h3{
+            font-size: 14px;
+            color:#A5A5A5;
+            float:left;
+            width: 170px;
+            text-align: left !important;
+        }
+        p{
+            font-size: 14px;
+            color: #5F5F5F;
+            float: right;
+            margin: 0px;
+            padding: 0px 20px;
+            text-align: left;
+            width: 272px;
+        }
+    }
+}
+.show_poster{
+   width: 100%;
+float: right;
+background: url(../images/poster01.png);
+background-position: center;
+background-size: cover;
+height: 340px;
+    .text{
+        width:200px;
+        position:absolute;
+        bottom:-20px;
+        margin:0 20px;
+        h3{
+            color:#fff;
+            font-family: 'MenschBold';
+            margin:0px;
+        }
+        .ticket_price{
+            margin: 0px;
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+}
 .datos_concierto{
     width:80%;
     float:right;
@@ -507,6 +552,10 @@ h2.heading{
         position: absolute;
     }
 }
+#registro_concierto h3{
+    margin: 0 auto;
+    text-align: center;
+}
 .icon{
     background: url(../images/sprite01.png);
     width: 33px;
@@ -526,4 +575,9 @@ h2.heading{
         }
 #map_canvas{
     height:230px;
+}
+#info_concierto{
+    width: 40%;
+    float: right;
+    margin: 0px 15px;
 }
