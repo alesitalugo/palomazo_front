@@ -9,7 +9,7 @@ $border-focus:  #9FB1C1;
 $blue:          #077ABC;
 $aqua:          #07B3A1;
 $asphalt:       #506982;
-$red: #f00;
+$red: #800;
 
 
 body{
@@ -23,21 +23,24 @@ body{
     padding:0px;
 }
 .home-menu .pure-menu-selected a{
-    color:#fff !important;
-    
+    color:#800 !important;
+   
 }
-
+.pure-menu li a:hover, .pure-menu li a:focus{
+    background:none !important;
+}
 .home-menu a{
-    color:#f00 !important;
+    color:#fff !important;
     float: left;
     margin: 10px;
     text-decoration: none;
 }
 .home-menu li a:hover, .home-menu li a:focus{
-    color: #fff !important;
+    color: #800 !important;
 }
 .splash-container{
-    background-image: url('../images/bgHome01.png') !important;
+    //background: #800 !important;
+    background: url('../images/bgHome01.png') !important #800;
     background-size: cover;
     background-position: center;
 }
@@ -69,9 +72,9 @@ body{
         border: 1px solid #fff;
         margin:10px 0;
         opacity: 1;
-    transition: opacity .5s ease-in-out;
-   -moz-transition: opacity .5s ease-in-out;
-    -webkit-transition: opacity .5s ease-in-out;
+        transition: opacity .5s ease-in-out;
+       -moz-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity .5s ease-in-out;
     }
     .link_button:hover{
        opacity:0.5;
@@ -166,7 +169,7 @@ h2.heading{
     background-size: cover !important;
     background-repeat: no-repeat !important;
     position: relative;
-    width: 31.5%;
+    width: 31.5% !important;
     margin: 10px 5px;
 }
 .band_description{
@@ -174,15 +177,15 @@ h2.heading{
     height:100%;
     padding: 20px 5px;
     opacity:0;
-    /*top: 200px;
-    position:absolute;    
-    bottom: 0px;
-   opacity: 0;
-    transition: opacity .5s ease-in-out;
-   -moz-transition: opacity .5s ease-in-out;
-   -webkit-transition: opacity .5s ease-in-out;
-    -webkit-transition-property: bottom, top;
+   
+  /*  -webkit-transition-property: bottom, top;
     -webkit-transition-duration: .5s;*/
+    -webkit-transition: all .8s ease-in-out;
+  -moz-transition: all .8s  ease-in-out;
+  -ms-transition: all .8s  ease-in-out;
+  -o-transition: all .8s  ease-in-out;
+  transition: all .8s  ease-in-out;
+    
     h3{
         font-size: 14px;
         text-transform: uppercase;
@@ -297,7 +300,13 @@ h2.heading{
                 }
 
             }
-            .form-group{
+            
+        }
+
+    }
+
+}
+.form-group{
 
                 .controls{
                     clear: both;
@@ -347,14 +356,14 @@ h2.heading{
                         color: #999;
                         font-size: 16px;
                         display: inline-block;
-                        padding: 4px 38px;
+                        padding: 4px 10px;
                         font-weight: 400;
-                        background-color: rgba(255,255,255,0);
+                        /*background-color: rgba(255,255,255,0);*/
                         @include transition(color .3s, top .3s, background-color .8s);
                         &.active{
                            top: -25px;
                             color: $red;
-                            background-color: rgba(255, 255, 255, 0.8);
+                            /*background-color: rgba(255, 255, 255, 0.8);*/
                         }
                     }
 
@@ -381,11 +390,6 @@ h2.heading{
                     }
                 }
             }
-        }
-
-    }
-
-}
 .icon{
     background: url(../images/sprite01.png);
     width: 33px;

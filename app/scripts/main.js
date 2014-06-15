@@ -2,6 +2,29 @@
 
 /* jshint camelcase: false */
 /* global define: false, _ */
+
+//BACKBONE FUNCTIONS 
+
+var AppRouter = Backbone.Router.extend({
+	routes: {
+		'':'home',
+		'concierto': 'ver_concierto',
+	}
+});
+
+
+
+var app_router = new AppRouter();
+app_router.on('route:home', function(){
+	console.log('home');
+});
+app_router.on('route:ver_concierto', function(){
+
+});	
+
+
+
+
 'use strict';
 (function($){
 	function floatLabel(inputType){
@@ -9,7 +32,7 @@
 			var $this = $(this);
 			// on focus add cladd active to label
 			$this.focus(function(){
-				$this.next().addClass("active");
+				$this.next().addClass('active');
 			});
 			//on blur check field and remove class if needed
 			$this.blur(function(){
@@ -20,7 +43,7 @@
 		});
 	}
 	// just add a class of "floatLabel to the input field!"
-	floatLabel(".floatLabel");
+	floatLabel('.floatLabel');
 })(jQuery);
 
 

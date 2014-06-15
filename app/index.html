@@ -16,8 +16,9 @@
         <link rel="stylesheet" href="styles/pure-min.css">
         <link rel="stylesheet" href="styles/main.css">        
         <link rel="stylesheet" href="styles/grids-responsive-min.css">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
         <link rel="stylesheet" href="styles/vendor/marketing-old-ie.css">
+        <link rel="stylesheet" href="styles/vendor/marketing.css">
         <link rel="stylesheet" href="font/stylesheet.css">
 
         <!-- endbuild -->
@@ -41,132 +42,202 @@
         <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
             <a href="#" class="pure-menu-heading"></a>
             <ul>
-                <li class=""><a href="#" class="show_modal" data-modal="artist">artistas</a></li>
-                <li class=""><a href="#" class="show_modal" data-modal="fans" >fans</a></li>
+                <li class=""><a class="show_modal" data-modal="artist">artistas</a></li>
+                <li class=""><a class="show_modal" data-modal="fans" >fans</a></li>
             </ul>
             
         </div>
-        <div class="splash-container">
-            <div class="splash">
-                <h1 class="splash-head">
-                    <img src="images/logo01.png" alt="" width="100%">
-                </h1>   
-                <p class="splash-subhead">apoya y promueve a tu banda favorita o si eres artista deja que mÉxico te conozca</p>
-                <a href="#" class="artist_page link_button">ver artistas</a>
-            </div>
-        </div>
-        <div class="content-wrapper">
-            <div class="pure-g">
-                <div class="pure-u-1-3 abstract_band" style="background-image:url(images/band01.png) !important; ">
-                    <div class="band_description">
-                        <h3>Nombre de la banda</h3>
-                        <p>Forage Tonx lomo, tousled messenger bag Blue Bottle plaid food truck VHS fingerstache.</p>
-                    </div>
-                    <div class="band_items">
-                        <a href="#" class="more"></a>
-                        <p><span>350</span> personas siguen a <span>banda</span></p>
-                    </div>
-                </div>
-                <div class="pure-u-1-3 abstract_band" style="background-image:url(images/band01.png) !important; ">
-                    <div class="band_description">
-                        <h3>Nombre de la banda</h3>
-                        <p>Forage Tonx lomo, tousled messenger bag Blue Bottle plaid food truck VHS fingerstache.</p>
-                    </div>
-                    <div class="band_items">
-                        <a href="#" class="more"></a>
-                        <p><span>350</span> personas siguen a <span>banda</span></p>
-                    </div>
-                </div>
-                <div class="pure-u-1-3 abstract_band" style="background-image:url(images/band01.png) !important; ">
-                    <div class="band_description">
-                        <h3>Nombre de la banda</h3>
-                        <p>Forage Tonx lomo, tousled messenger bag Blue Bottle plaid food truck VHS fingerstache.</p>
-                    </div>
-                    <div class="band_items">
-                        <a href="#" class="more"></a>
-                        <p><span>350</span> personas siguen a <span>banda</span></p>
-                    </div>
+        <!--<section id="home">
+            <div class="splash-container">
+                <div class="splash">
+                    <h1 class="splash-head">
+                        <img src="images/logo01.png" alt="" width="100%">
+                    </h1>   
+                    <p class="splash-subhead">apoya y promueve a tu banda favorita o si eres artista deja que mÉxico te conozca</p>
+                    <a href="#" class="artist_page link_button">ver artistas</a>
                 </div>
             </div>
-           <div id="entry_modal">
-                <div class="container_entry_modal">    
-                    <div class="close_modal">
-                        <i class="fa fa-times"></i> 
-                    </div>   
-                    <div class="container_modal">
-                        <div class="nav_entry_modal">
-                            <div class="button_entry_modal">
-                                <a href="#" id="button_artist" class="button_form" data-modal="artist">
-                                    <i class="band_icon icon"></i>
-                                    artistas
-                                </a>
-                            </div>
-                            <div class="button_entry_modal">
-                                <a href="#" class="button_form" id="button_fans" data-modal="fans">
-                                    <i class="fan_icon icon"></i>
-                                    fans
-                                </a>
-                            </div>
+            <div class="content-wrapper">
+                <div class="pure-g">
+                    <div class="pure-u-1-3 abstract_band" style="background-image:url(images/band01.png) !important; ">
+                        <div class="band_description">
+                            <h3>Nombre de la banda</h3>
+                            <p>Forage Tonx lomo, tousled messenger bag Blue Bottle plaid food truck VHS fingerstache.</p>
                         </div>
-                        <div class="content_entry_modal">
-                            <div id="artist_sign" class="signin_form">
-                                <form action="" method="" accept-charset="" id="artist_form">
-                                    <div class="form-group">
-                                        <div class="controls">
-                                            <div class="tooltip">
-                                            </div>
-                                            <input type="text" name="name" id="name_artist" value="" class="floatLabel">
-                                            <label for="name_artist">
-                                                <!--<i class="band_icon icon"></i>-->
-                                                banda / correo electrónico
-                                            </label>
-                                        </div>
-                                        <div class="controls">
-                                            <div class="tooltip">
-                                            </div>
-                                            <input type="text" name="password" value="" class="floatLabel">
-                                            <label for="password">contraseña</label>
-                                        </div>
+                        <div class="band_items">
+                            <a href="#" class="more"></a>
+                            <p><span>350</span> personas siguen a <span>banda</span></p>
+                        </div>
+                    </div>
+                    <div class="pure-u-1-3 abstract_band" style="background-image:url(images/band01.png) !important; ">
+                        <div class="band_description">
+                            <h3>Nombre de la banda</h3>
+                            <p>Forage Tonx lomo, tousled messenger bag Blue Bottle plaid food truck VHS fingerstache.</p>
+                        </div>
+                        <div class="band_items">
+                            <a href="#" class="more"></a>
+                            <p><span>350</span> personas siguen a <span>banda</span></p>
+                        </div>
+                    </div>
+                    <div class="pure-u-1-3 abstract_band" style="background-image:url(images/band01.png) !important; ">
+                        <div class="band_description">
+                            <h3>Nombre de la banda</h3>
+                            <p>Forage Tonx lomo, tousled messenger bag Blue Bottle plaid food truck VHS fingerstache.</p>
+                        </div>
+                        <div class="band_items">
+                            <a href="#" class="more"></a>
+                            <p><span>350</span> personas siguen a <span>banda</span></p>
+                        </div>
+                    </div>
+                </div>
 
-                                    </div>
-                                    <button type="button" id="button_artist_login" class="button_login">Ingresar</button>                                                                                                       
-                                </form>
-                                <a href="#">olvidé la contraseña</a>
-                                <a href="#">Registrarme</a>
+                <div id="entry_modal">
+                    <div class="container_entry_modal">    
+                        <div class="close_modal">
+                            <i class="fa fa-times"></i> 
+                        </div>   
+                        <div class="container_modal">
+                            <div class="nav_entry_modal">
+                                <div class="button_entry_modal">
+                                    <a href="#" id="button_artist" class="button_form" data-modal="artist">
+                                        <i class="band_icon icon"></i>
+                                        artistas
+                                    </a>
+                                </div>
+                                <div class="button_entry_modal">
+                                    <a href="#" class="button_form" id="button_fans" data-modal="fans">
+                                        <i class="fan_icon icon"></i>
+                                        fans
+                                    </a>
+                                </div>
                             </div>
-                            <div id="fans_sign" class="signin_form">
-                                <form action="" method="" accept-charset="" id="artist_form">
-                                    <div class="form-group">
-                                    
-                                        <div class="controls">
-                                        <div class="tooltip">
-                                        </div>
-                                        
-                                        <input type="text" name="name" id="name_fan" value="" class="floatLabel">
-                                        <label for="name_fan">
-                                            <!--<i class="fan_icon icon"></i>-->
-                                            usuario / correo electrónico
-                                        </label>
-                                        </div>
-                                           <div class="controls">
-                                            <div class="tooltip">
+                            <div class="content_entry_modal">
+                                <div id="artist_sign" class="signin_form">
+                                    <form action="" method="" accept-charset="" id="artist_form">
+                                        <div class="form-group">
+                                            <div class="controls">
+                                                <div class="tooltip">
+                                                </div>
+                                                <input type="text" name="name" id="name_artist" value="" class="floatLabel">
+                                                <label for="name_artist">
+                                               
+                                                banda / correo electrónico
+                                                </label>
                                             </div>
-                                            <input type="text" name="name" id="name" value="" class="floatLabel">
-                                            <label for="name">contraseña</label>
+                                            <div class="controls">
+                                                <div class="tooltip">
+                                                </div>
+                                                <input type="text" name="password" value="" class="floatLabel">
+                                                <label for="password">contraseña</label>
+                                            </div>
+
                                         </div>
-                                        <button type="button" id="button_artist_login" class="button_login">Ingresar</button> 
-                                    </div>
+                                        <button type="button" id="button_artist_login" class="button_login">Ingresar</button>                                                                                                       
+                                    </form>
+                                    <a href="#">olvidé la contraseña</a>
+                                    <a href="#">Registrarme</a>
+                                </div>
+                                <div id="fans_sign" class="signin_form">
+                                    <form action="" method="" accept-charset="" id="artist_form">
+                                        <div class="form-group">
+                                    
+                                            <div class="controls">
+                                                <div class="tooltip">
+                                                </div>
+                                        
+                                                <input type="text" name="name" id="name_fan" value="" class="floatLabel">
+                                                <label for="name_fan">
+                                            
+                                                    usuario / correo electrónico
+                                                </label>
+                                            </div>
+                                            <div class="controls">
+                                                <div class="tooltip">
+                                                </div>
+                                                <input type="text" name="name" id="name" value="" class="floatLabel">
+                                                <label for="name">contraseña</label>
+                                            </div>
+                                            <button type="button" id="button_artist_login" class="button_login">Ingresar</button> 
+                                        </div>
                                                           
-                                </form>
-                                <a href="#">olvidé la contraseña</a>
-                                <a href="#">Registrarme</a>
+                                    </form>
+                                    <a href="#">olvidé la contraseña</a>
+                                    <a href="#">Registrarme</a>
+                                </div>
                             </div>
-                        </div>
-                    </div>                
+                        </div>                
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>-->
         
+        <section id="registro_concierto" class="section_intern">
+            <div id="concert_form">  
+                <div class="pure-g">
+                    <div class="pure-u-1-2" id="info_artist">
+                        <div class="artist_profile">
+                            <div class="artist_image">
+                                <img src="">
+                            </div>
+                            <div class="artist_description">
+                                <i class="fa fa-pencil-square-o"></i>
+                                <h3>Nombre del Artista</h3>
+                                <p>Descripción del artista</p>
+                                <div class="contact_info">
+                                    <a href="#" target="_blank">www.band.com</a>
+                                    <a href="#">info@artista.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pure-u-1-2" id="info_concierto">
+                        <div class="datos_concierto">
+                            <h3>Introducir datos del concierto</h3>
+                            <input type="text" name="" value="" class="floatLabel">
+                            <button type="button" class="button_login">
+                               <i class="fa fa-cloud-download"></i>
+                                subir poster
+                            </button>
+                            <div class="challenge">
+                                <p>META</p>
+                                <input type="text" name="" value="$50,000.00">
+                            </div>
+                            <div class="ticket_price">
+                                <i class="fa fa-ticket"></i>
+                                <p>Precio por Boleto</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="pure-g">
+                    <div class="pure-u-1-2">
+                        <p>double</p>
+                    </div>
+                    <div class="pure-u-1-2">
+                        <div class="item_concert">
+                            <div class="controls">
+                                <input type="text" name="date" value="" >
+                                <label for=""></label>
+                            </div>
+                            <i class="fa fa-calendar"></i>
+                        </div>
+                        <div class="item_concert">
+                            <input type="text" name="" value="" placeholder="Location" class="floatLabel">
+                            <i class=""></i>
+                        </div>
+                        <div class="item_concert">
+                            <textarea name=""></textarea>
+                        </div>
+                        <button type="button" class="button_login">
+                            <i class="fa fa-cloud-download"></i>
+                            guardar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- bower:js -->
         <script src="../bower_components/jquery/jquery.js"></script>
         <!-- endbower -->
@@ -181,7 +252,7 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
-
+        <script src="scripts/util.js"></script>
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
